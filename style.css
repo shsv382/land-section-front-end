@@ -8,6 +8,10 @@
 	position: relative;
 }
 
+.container {
+	padding-bottom: 80px;
+}
+
 nav {
 	color: #ddd;
 	background-color: #471200;
@@ -119,7 +123,7 @@ nav {
 	margin: auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 	.menu {
 		position: fixed;
 		bottom: 0;
@@ -137,6 +141,11 @@ nav {
 	
 	.nav-unit > a {
 		font-size: 1em;
+	}
+
+	li > a:focus, .nav-unit > li > a:hover, .nav-unit > li > a:transparent {
+		background-color: #471200;
+		background: linear-gradient(#471200, #401000);
 	}
 	
 	.nav {
@@ -158,5 +167,21 @@ nav {
 
 	.container {
 		margin-bottom: 80px;
+	}
+
+	.head-banner > h3 {
+		font-size: 3em;	
+		letter-spacing: 0.1em;
+	}
+
+	.head-banner > h4 {
+		font-size: 1.9em;	
+		letter-spacing: 0.05em;
+	}
+
+	.head-banner > h1 {
+		font-size: 1.5em;	
+		letter-spacing: 0.02em;
+		padding: 0 10px 20px 10px;
 	}
 }
